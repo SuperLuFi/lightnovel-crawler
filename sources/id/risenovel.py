@@ -4,11 +4,11 @@ from lncrawl.core.crawler import Crawler
 from bs4 import Comment
 
 logger = logging.getLogger(__name__)
-search_url = "https://morenovel.net/?s=%s&post_type=wp-manga&author=&artist=&release="
+search_url = "https://risenovel.com//?s=%s&post_type=wp-manga&author=&artist=&release="
 
 
 class ListNovelCrawler(Crawler):
-    base_url = "https://morenovel.net/"
+    base_url = "https://risenovel.com/"
 
     def search_novel(self, query):
         query = query.lower().replace(" ", "+")
